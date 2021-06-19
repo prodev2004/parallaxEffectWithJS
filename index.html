@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Parallax Effect</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Your <span>Logo</span></h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- now we'll add the images -->
+        <!-- we add the move class to the images and texts we want to add the parallax effect to -->
+        <!-- i'd like to give it to the info text also -->
+        <img src="img/mountain1.png" style="z-index: 10;">
+        <img src="img/person.png" style="z-index: 9;">
+        <img class="move" data-speed="0.5" src="img/rightMountain.png" style="z-index: 8;">
+        <img class="move" data-speed="0.7" src="img/farAwayMountains.png" style="z-index: 7;">
+        <img class="move" data-speed="0.9" src="img/sky.png" style="z-index: 6;">
+
+        <div class="info move">
+            <h1>Hello World</h1>
+            <p>Welcome to my parallax website</p>
+        </div>
+    </header>
+
+    <!-- now we'll add a second section -->
+    <section class="about">
+        <div class="shadow"></div>
+        <div class="info">
+            <h1>Hello World</h1>
+            <p>To the right side you can see the full image that's been used at the header to make this cool looing parallax effect which you can put to your website and it will make it look much cooler.</p>
+        </div>
+        <div class="img">
+            <img src="img/fullImages.jpg">
+        </div>
+    </section>
+</body>
+</html>
+
+<!-- BEFORE STARTING... I WILL SHOW YOU THE IMAGE THAT WE WILL MAKE THE PARALLAX EFFECT WITH... -->
+<!-- WHAT YOU HAVE TO DO IS CROP PARTS OF THE IMAGE FROM THE PHOTO LIKE I DID.  YOU CAN DO THAT IN PHOTOSHOP -->
+<!-- thats the full image -->
+<!-- and those were the parts that i cropped -->
+<!-- NOW LETS CONTINUE WITH THE CODE... -->
+<!-- as you can see now it doesnt look so good -->
